@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name Character Counter</title>
+</head>
+<body>
+
+<h2>Character Counter</h2>
+
+<form id="nameForm">
+  <label for="nameInput">Enter your name:</label><br>
+  <input type="text" id="nameInput" name="nameInput"><br><br>
+  <input type="button" value="Calculate" onclick="countCharacters()">
+</form>
+
+<p id="charCount">Character count will be displayed here.</p>
+
+<script>
+function countCharacters() {
+  var name = document.getElementById("nameInput").value;
+  var charCount = name.length;
+  document.getElementById("charCount").innerText = "Number of characters: " + charCount;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+        
+
+

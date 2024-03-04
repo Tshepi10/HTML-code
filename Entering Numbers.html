@@ -1,0 +1,88 @@
+﻿ENTERING NUMBERS
+<html>
+
+<head>
+
+<title> Example 1 - Add 2 Numbers </title>
+
+<script>
+
+ function addNumbers()
+{
+	var num1 = parseFloat(document.getElementById('number1').value);
+	var num2 = parseFloat(document.getElementById('number2').value);
+
+	var sum = num1+num2;
+
+	document.getElementById('resultSum').innerText = 'Sum: ' + sum;
+}//addNumbers
+
+function multiplyNumbers()
+{
+	var num1 = parseFloat(document.getElementById('number1').value);
+	var num2 = parseFloat(document.getElementById('number2').value);
+
+	var product = num1*num2;
+
+	document.getElementById('resultProduct').innerText = 'Product: ' + product;
+}//multiplyNumbers
+
+function subtractNumbers()
+{
+	var num1 = parseFloat(document.getElementById('number1').value);
+	var num2 = parseFloat(document.getElementById('number2').value);
+
+	var difference = num1-num2;
+
+	document.getElementById('resultDifference').innerText = 'Difference: ' + difference;
+}//subtractNumbers
+
+function divideNumbers()
+{
+	var num1 = parseFloat(document.getElementById('number1').value);
+	var num2 = parseFloat(document.getElementById('number2').value);
+
+	var quotient = num1/num2;
+
+	document.getElementById('resultQuotient').innerText = 'Quotient: ' + quotient;
+}//divideNumbers
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<label><b> Welcome, Enter Numbers Below:</b></label>
+<br>
+<label> Number 1:</label>
+<input type ="text" id = "number1">
+<br>
+<label> Number 2:</label>
+<input type = "text" id = "number2">
+<br>
+<button onclick ="addNumbers()">Add</button> 
+<button onclick ="multiplyNumbers()">Multiply</button>
+<button onclick ="subtractNumbers()">Subtract</button>
+<button onclick ="divideNumbers()">Division</button>
+
+<p id = "resultSum"></p>
+<p id = "resultProduct"></p>
+<p id = "resultDifference"></p>
+<p id = "resultQuotient"></p>
+<br>
+
+</body>
+
+
+
+</html>
+
+
+
+        
+
+
